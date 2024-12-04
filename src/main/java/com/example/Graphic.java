@@ -16,4 +16,7 @@ public abstract class Graphic {
         this.heightInPixels = heightInPixels;
     }
 
+    // abstract method that will need to be implemented by subclass
+    public abstract Graphic clone();
+
 }

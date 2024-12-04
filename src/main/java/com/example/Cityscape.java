@@ -8,12 +8,11 @@ public class Cityscape {
 
         BuildingType houseBuildingType = new BuildingType("House");
         Building house1 = new Building(21, houseBuildingType);
-        Building house2 = new Building(21, houseBuildingType);
-        Building house3 = new Building(21, houseBuildingType);
-        Building house4 = new Building(21, houseBuildingType);
-        Building house5 = new Building(21, houseBuildingType);
+        Building house2 = house1.clone();
+        Building house3 = house1.clone();
+        Building house4 = house1.clone();
+        Building house5 = house1.clone();
         houseBuildingType.setType("House with yard");
-
 
         BuildingType skyscraperBuildingType = new BuildingType("skyscraper");
         Building skyscraper1 = new Building(86, skyscraperBuildingType);
@@ -30,7 +29,7 @@ public class Cityscape {
     }
 
     private static void createCityscape(List<Graphic> graphics) {
-        System.out.println("Constructing cityscape: " );
+        System.out.println("Constructing cityscape: ");
         graphics.forEach(System.out::println);
     }
 
